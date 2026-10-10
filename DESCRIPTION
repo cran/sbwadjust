@@ -1,0 +1,28 @@
+Package: sbwadjust
+Title: Stable Balancing Weights for Covariate Adjustment in Trials
+Version: 0.3.0
+Authors@R: 
+    person("Kayla", "Irish", , "kayla.a.irish@gmail.com", role = c("aut", "cre"))
+Description: Covariate adjustment for randomized trials using stable
+    balancing weights (SBW), as proposed by Irish, Zubizarreta, and Luedtke
+    (2026) <doi:10.48550/arXiv.2609.01638>. sbw_weights() fits
+    exact-balance SBW for a two-arm study by a closed-form solve with a
+    nonnegative quadratic-programming fallback; sbw_estimate() computes a
+    closed menu of treatment-effect estimands (average treatment effect,
+    relative risk, survival ratio, Mann-Whitney, quantile contrasts) from
+    the fitted weights, with bootstrap confidence intervals.
+License: MIT + file LICENSE
+URL: https://github.com/kaylairish/sbwadjust
+BugReports: https://github.com/kaylairish/sbwadjust/issues
+Encoding: UTF-8
+Language: en-US
+RoxygenNote: 7.2.3
+Imports: graphics, quadprog, stats, survival
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-09-29 13:01:59 UTC; kaylairish
+Author: Kayla Irish [aut, cre]
+Maintainer: Kayla Irish <kayla.a.irish@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-10-10 10:20:02 UTC
